@@ -1,0 +1,126 @@
+/* Portfolio css */
+
+/* IMPORT FONTS */
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Assistant&display=swap');   
+
+/* BACKGROUND */
+
+body{
+    background: rgb(10, 49, 52);
+    max-width: 1000px;
+    margin: auto;
+} 
+
+/* NAVIGATION BAR */
+
+.topnav {
+    overflow: hidden;
+    background-color: rgb(21, 102, 109);
+    width: 1000px;
+  }
+  
+  .topnav a {
+    float: left;
+    display: block;
+    color: rgb(154, 197, 191);
+    text-align: center;
+    padding: 20px 0px;
+    text-decoration: none;
+    font-size: 40px;
+    font-family: 'Bebas Neue', sans-serif;
+    cursor: pointer;
+    width: 333.3333px;
+  }
+  
+  .topnav a:hover {
+    background-color: rgb(154, 197, 191);
+    color: rgb(13, 65, 70);
+  }
+  
+  .topnav a.active {
+    background-color: rgb(154, 197, 191);
+    color:  rgb(13, 65, 70);
+  }
+
+
+/* TEXT */
+
+p.title {
+    text-align: center;
+    color:  rgb(154, 197, 191);
+    font-size: 2.2rem;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 100px;
+    padding: 0px;
+    margin-bottom: 0px;
+}
+
+p.subtitle {
+    color: rgb(154, 197, 191);
+    text-align: center;
+    font-family: 'Assistant', sans-serif;
+    font-size: 40px;
+}
+
+p {
+    align-items: center;
+    text-align: left;
+    color: rgb(250, 250, 250);
+    max-width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow-wrap: break-all;
+    font-family: 'Assistant', sans-serif;
+    font-size: 1.1rem;}
+
+    .leader{
+        text-align: left;
+        color:  rgba(92, 243, 208, 0.86);
+        font-size: 2.2rem;
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: 50px;
+        font-size: 50px;
+        padding: 0px;
+        margin-bottom: 0px;
+}
+
+.bcontainer {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;;
+        gap: 30px 30px;
+        margin-top: 30px;
+        border-style: solid;
+        border-color: rgb(154, 197, 191);
+        padding: 30px;
+        border-radius: 25px;
+        background-color: rgb(154, 197, 191);
+
+}
+
+/*LINKS*/
+
+    a:link, a:visited {
+        color:  rgba(92, 243, 208, 0.86);
+        opacity: 1;
+        text-decoration: underline;
+    }
+
+    /* mouse over link */
+    a:hover {
+        color:rgb(154, 197, 191);
+        text-decoration: none;
+    }
+
+    /* selected link */
+    a:active {
+        text-decoration: underline;
+    }
+
+    /* tab selection over link */
+    a:focus {
+        color: rgb(154, 197, 191);
+        text-decoration: none;
+    }

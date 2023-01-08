@@ -1,96 +1,129 @@
 <!DOCTYPE html>
-<html lang="en">
 
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewpoint" content="width=device-width, initial-scale=2.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="jquery-3.6.0.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-lite@4.17.0"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.12.2"></script>
 
-    <!--Main Stylesheet-->
-    <link rel="stylesheet" href="project.css">
 </head>
 
 <body>
 
-    <h1>Portfolio:</h1> 
-    <a href="indexClassExample.html" id="link1">HOME</a>
+    <div class="topnav" id="myTopnav">
+        <a onclick="window.location.href = 'index.html'" id="link1">Home</a>
+        <a onclick="window.location.href='portfolio.html'" id="link1">Portfolio</a>
+        <a onclick="window.location.href = 'project.html'" class="active">Project</a>
+    </div> 
 
-  <div>
-        <h2>My Question: </h2>
-        <h3> Talk about urbanisation, link to UN sustainable goals etc. Talk about how i made my first chart </h3>
-  </div>
+    <p class=title> Project </p>
 
-  <!--Chart 1 -->
-
-    <div class="chart" id="Chart20" ></div>
-
-    <!--Chart 2-->
-
-    <div>
-        <h5> Talk about urbanisation and GDP and how they are linked. Talk about how you go your data using APIs from the world bank and creating tertiles. </h5>
-    </div>
-
-
-    <!--Insert Kepler Map -->
-
-
-    <!--Chart 3 & 4-->
-
-    <div>  
-        <h7> Talk about the importance of green space on health and economy. Urbanisation reduces green space. </h7>
-        <h8> </h8>
-    </div>
+    <p><span class="leader"> Urbanisation and Living Standards  </span> </p>
     
-        <div class="chart" id="Chart21" ></div>
-        <div class="chart" id="Chart22" ></div>
+    <p>Currently just over half of the world’s population live in what is classed as an ‘urban’ area with new <a href="https://www.un.org/development/desa/pd/sites/www.un.org.development.desa.pd/files/files/documents/2020/Jan/un_2018_wup_report.pdf">estimates</a> from the UN prediciting that by 2070 this will have increased to over two thirds totalling around 7 billion people. Urbanisation has many recognised benefits ranging from shorter trade links and higher rates of economic activity to increased innovation. This project aims to look at the impact of fastly developing urban areas on their residents, specifically focusing on access to green spaces. </p>
+    
+    <p> Projections produced by the UN show that combined with population growth migration from rural areas may increase the number of people living in urban areas by 2.5 billion in 2050. My first visulisation looks at the trends in the percentage of people living in urban areas in five areas of the world. I created this using the World Bank <a href="Project/ProjectChart1.ipynb">Python</a> library and downloading data on urban rates per country. </p>
+    
+      <!--CHART 1:-->
 
-    <!--Chart 5-->
+    <section class="bcontainer">
+            <div class="chart" id="chart23"></div>
+    </section>
 
-    <div>
-        <h9> Green Space in London:</h9>
-    </div>
+     <!--CHART 2:-->
 
-      <div class="chart" id="Chart23" ></div>
+    
+    <p>Urban cities have been described in economic <a href="https://scholar.google.com/scholar_lookup?author=F.+Perroux+&publication_year=1955&title=Note+sur+la+Notion+de+Poles+Croissance&journal=Economic+Appliquee&volume=2&pages=307-320">literature</a> as engines of growth and throughout history urbanisation has been key in both human and economic development. Cities benefit from increased utilisation of human capital and more efficient division of labour which drive productivity rates. </p>
+    
+    <p> My second visualitaion uses data I downloaded from the World Bank python library. I merged the datasets together using <a href="Project/ProjectChart2.ipynb">Python</a>. This allowed me to then regress the urban population rate on gdp per capita to show their positive relationship. </p>
 
+    <section class="bcontainer">
+             <div class="chart" id="chart24"></div>
+    </section>
 
-    <!--Chart 6-->
+    <!--CHART 3,4 % 5:-->
 
-    <div>
-        <h11> Link Between Poverty Rates and Green Space Access</h11>
-        <h12> </h12>
-    </div>
+    <p><span class="leader"> Green Space and Happiness </span> </p>
+    
+     <p> <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5663018/">Research</a> shows how people who interact with the outside environment have a range of favorable outcomes. Exposure to green enviroments has been shown to improve both mental and physcial health including reduced depression and improved quality of life especially in children.  </p>
+     
+     <p>I scraped the happiness score from the 2022 World Happiness Report which ranks the happiness of countries based on feedback from citizens asking them to state their happiness on a Cantril Ladder from 0 to 10. I then used an API from the World Bank to get data on GDP. Then I downloaded in csv format the urban green score for countries from a report which calculated the score using satellite imagery. After collecting my data I merged the datasets using this <a href="Project/ProjectChart4&5.ipynb">Python</a>notebook.  </p>
+    
+     <section class="bcontainer">
+             <div class="chart" id="chart25"></div>
+             <div class="chart" id="chart26"></div>
+             <div class="chart" id="chart27"></div>
+    </section>
 
+    <p>Completing the regression charts one can see how happiness is positively correlated with GDP per capita. Urban green space however shows a more significant correlation with countries with higher levels of GDP suggesting that urban green space may explain happiness that is beyond economic success. 
+    </p>
+    
+    <!--CHART 6 :-->
 
-        <div class="chart" id="Chart24" ></div>
+    <p><span class="leader"> London </span> </p>
+    
+     <p> Focusing in on London, for my fifth and sixth visualisation I created a choropleth of the London boroughs showing the percentage of land covered by green space. This data was downloaded from the London Datastore in the form of a csv and embedded onto a geojson file of the London Boroughs. I also scraped data from the GiGL website on the breakdown in the the type of green space, this can be seen in this<a href="Project/ProjectChart8.ipynb">Python</a>  notebook.  </p>
+     
+    <section class="bcontainer">
+             <div class="chart" id="chart28"></div>
+    </section>
 
+    <section class="bcontainer">
+        <div class="chart" id="chart30"></div>
+</section>
 
+    <!--CHART 7 :-->
+    
+     <p>One can see that in London there is less green space the further central the borough is. However, research has also shown that green space geography is not only dependent on location and that often neighbourhoods with a lower socio-economic status have less green space than other neighbourhoods. 
+    </p>
+
+    <p>For the next visualisation I scraped data on the poverty rate and population per london borough and used a <a href="Project/ProjectChart8.ipynb">Python</a> notebook to merge these datasets with my previous one on the green rate. This allowed me to then regress the poverty rate on green space showing their negative relationship. Furthermore, using population data I was also able to scale my visulation points.  </p>
+     
+    <section class="bcontainer">
+             <div class="chart" id="chart29"></div>
+    </section>
+
+    <p> The data shows how boroughs such as Tower Hamlets that have higher levels of poverty have less green spaces than boroughs with less poverty such as Richmond Upon-Thames. Furthermore, this inequality is not only a problem in London <a href="https://onlinelibrary.wiley.com/doi/10.1002/ldr.3083">studies</a> have also shown how green access is unequal in many European cities. For example, in Stockholm workers with higher incomes have greater access to green space that is in a walking distance from their home. </p>
+
+     <p>Data shows how urbanisation is showing no signs of slowing down in upcoming years, therefore urban planning decisions should be made that lead to the improvement and creation of urban green space. This protection and creation of space will help ensure that current and future residents of urban cities will be able to benefit from the physical and mental benefits green space brings. Furthermore, improving access to new and current green spaces for residents of lower socio-economic backgrounds should also be considered to reduce the risk of potential health and happiness inequalities. </p>
+
+ 
 
 
 </body>
 
 <script>
-    //Define charts:
-    var myChart20 = "projectchart1";
-    var myChart21 = "happinessandgdp.json";
-    var myChart22 = "happinessandscore.json";
-    var myChart23 = "ProjectChart5.json";
-    var myChart24 = "ProjectChart6.json";
 
+    // Set the charts that we want on the page as variables linked to JSON files:
+    var myChart23 = "Project/Charts/ProjectChart1.json";
+    var myChart24 = "Project/Charts/ProjectChart2.json";
+    var myChart25 = "Project/Charts/ProjectChart3.json";
+    var myChart26 = "Project/Charts/ProjectChart4.json";
+    var myChart27= "Project/Charts/ProjectChart42.json";
+    var myChart28 = "Project/Charts/ProjectChart5.json";
+    var myChart29 = "Project/Charts/ProjectChart6.json";
+    var myChart30 = "Project/Charts/ProjectChart8.json";
     
-
-    // Embed charts:
-    vegaEmbed('#Chart20', myChart20);
-    vegaEmbed('#Chart21', myChart21);
-    vegaEmbed('#Chart22', myChart22);
-    vegaEmbed('#Chart23', myChart23);
-    vegaEmbed('#Chart24', myChart24);
-  
-</script>
+    
+    
+    // Embed the charts in the divs above
+    vegaEmbed('#chart23', myChart23, {"actions": true});
+    vegaEmbed('#chart24', myChart24, {"actions": true});
+    vegaEmbed('#chart25', myChart25, {"actions": true});
+    vegaEmbed('#chart26', myChart26, {"actions": true});
+    vegaEmbed('#chart27', myChart27, {"actions": true});
+    vegaEmbed('#chart28', myChart28, {"actions": true});
+    vegaEmbed('#chart29', myChart29, {"actions": true});
+    vegaEmbed('#chart30', myChart30, {"actions": true});
+  </script>
 
 
 </html>
