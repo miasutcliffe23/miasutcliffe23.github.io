@@ -1,0 +1,32 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "repeat": {
+      "row": ["Area type"],
+      "column": ["Population 2001", "Population 2019", "% growth "]
+    },
+    
+    "title": {
+        "text": "Population Growth by area type",
+        "subtitle":"Source: ONS ",
+        "subtitleFontStyle":"italic",
+        "subtitleFontSize":10,
+        "anchor": "start",
+        "color": "black"
+      },
+      
+    
+    "spec": {
+      "data": {"url": "https://raw.githubusercontent.com/miasutcliffe/miasutcliffe.github.io/main/ProjectChart8data.csv"},
+  
+      "mark": {"type": "bar",
+      "color": "#60ad97"},
+  
+      "encoding": {
+        "x": {"field": {"repeat": "column"}, "type": "quantitative"},
+        "y": {
+          "field": {"repeat": "row"},
+          "type": "nominal", "axis": "Area"
+        
+        }}
+    }
+  }

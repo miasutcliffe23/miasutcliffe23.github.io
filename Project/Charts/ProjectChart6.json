@@ -1,0 +1,62 @@
+{ "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+  "title": {
+    "text": "Poverty and Green Space - London Boroughs",
+    "subtitle":"Percentage green space and poverty rate, Source: Trust for London ",
+
+    "subtitleFontStyle":"italic",
+    "subtitleFontSize":10,
+    "anchor": "start",
+    "color": "black"
+  },
+
+  "data": {"url": "https://raw.githubusercontent.com/miasutcliffe/miasutcliffe.github.io/main/londondata1.csv"},
+
+   
+  "height": 300,
+  "width": 300,
+  "background":"transparent",
+
+"layer":[{
+
+  "mark": {
+    "type":"circle",
+    "color":"seagreen",
+    "size":100},
+ 
+
+  "encoding": {
+    "x": {
+      "field": "Poverty Rate", 
+      "type": "quantitative",
+      "scale": {"domain": [0, 0.6]},
+      "title":"Poverty Rate"
+      },
+
+    "y": {
+      "field": "Green Percentage", 
+      "type": "quantitative",
+      "title":"Percentage green"
+      },
+
+     "size": {
+        "field": "Population(2019 est)", 
+        "type": "quantitative",
+        "title":"Prison Rate",
+        "scale": { "range": [-100, 1000]},
+        "legend":null},
+
+        "tooltip":[
+        {"field":"London Borough", "type": "nominal", "title":"Borough"},
+        {"field":"Population(2019 est)", "type": "quantitative", "title":"Population"}
+        ]}},
+
+    {"mark": {"type": "line", "color": "grey"},
+
+      "transform": [{"regression": "Poverty Rate", "on": "Green Percentage"}],
+         
+      "encoding": {
+        "x": {"field": "Poverty Rate", "type": "quantitative"},
+        "y": {"field": "Green Percentage", "type": "quantitative"}}}]}
+      
+

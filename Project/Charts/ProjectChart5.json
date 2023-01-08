@@ -1,0 +1,47 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  
+    "width": 500,
+    "height": 500,
+    "background":"transparent",
+    "view": {"stroke": "transparent"},
+  
+     "title": {
+      "text": "Green Space in London",
+      "fontSize": 12,
+      "subtitle":["Percentage of land considered a green space (%), Source: Statista", ""],
+      "subtitleFontStyle":"italic",
+      "subtitleFontSize":10, "anchor": "middle"
+      
+    },
+    
+    "data": {
+      "url": "https://raw.githubusercontent.com/miasutcliffe/miasutcliffe.github.io/main/london_boroughs.json",
+    "format": {"property": "features"}},
+  
+    "transform": [{
+    "lookup": "properties.name",
+    "from": {
+      "key": "London Borough",
+      "fields": ["Green Percentage"],
+      "data": {"url": "https://raw.githubusercontent.com/miasutcliffe/miasutcliffe.github.io/main/londondata1.csv"}}}],
+  
+    "projection": {"type": "mercator"},
+    "mark": "geoshape", 
+  
+    "encoding":{
+      "color":{
+        "field":"Green Percentage",
+        "legend":{
+          "title": "Percentage",
+          "orient": "right",
+          "direction": "vertical"},
+          "type": "quantitative",
+          "scale":{
+            "scheme":"greens",
+            "reverse": false}},
+      "tooltip":[
+        {"field":"properties.id", "title": "London Borough"},
+        {"field":"Green Percentage", "title": "Green Space Cover (%)"}
+      ]
+    }}

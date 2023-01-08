@@ -1,0 +1,36 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": 200,
+    "height": {"step": 16},
+    "data": {"url": "https://raw.githubusercontent.com/miasutcliffe/miasutcliffe.github.io/main/ProjectChart8.csv"},
+  
+  "title": {
+          "text": "Land Use in London",
+          "subtitle": "by type, Source: GiGL",
+          "subtitleFontStyle":"italic",
+          "subtitleFontSize":10,
+          "anchor": "start",
+          "color": "black"},
+  
+    "encoding": {
+      "y": {
+        "field": "Land Use",
+        "type": "nominal",
+        "axis": null
+      }
+    },
+    "layer": [{
+      "mark": {"type": "bar","color": "#8fca97"},
+      "encoding": {
+        "x": {
+          "field": "Percentage",
+          "type": "quantitative",
+          "scale": {"domain": [0, 8]},
+          "title": "Perecentage"}}
+    }, {
+      "mark": {"type": "text", "align": "left", "x": 5},
+      "encoding": {
+        "text": {"field": "Land Use"},
+        "detail": {"aggregate": "count"}
+      }}]
+    }

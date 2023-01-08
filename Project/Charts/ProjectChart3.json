@@ -1,0 +1,80 @@
+{
+  "data": {
+    "url": "https://raw.githubusercontent.com/miasutcliffe/miasutcliffe.github.io/main/happinessdata.csv"
+  },
+
+
+  "title": {
+    "text": "GDP and Happiness ",
+    "subtitle":"",
+    "subtitleFontStyle":"italic",
+    "subtitleFontSize":10,
+    "anchor": "start",
+    "color": "black"
+  },
+
+  "layer": [
+    {
+      "mark": {
+   "type": "point",
+        "filled": true,
+        "color": "teal"
+      },
+      "encoding": {
+        "x": {
+          "field": "GDP per Capita",
+          "type": "quantitative",
+          "scale": {"domain": [0, 100000]}
+        },
+        "y": {
+          "field": "Score",
+          "type": "quantitative",
+          "scale": {"domain": [1,10]}
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "line",
+        "color": "Slategrey"
+      },
+      "transform": [
+        {
+          "regression": "GDP per Capita",
+          "on": "Score"
+        }
+      ],
+      "encoding": {
+        "x": {
+          "field": "GDP per Capita",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "Score",
+          "type": "quantitative",
+          "title": "Happiness Score"
+        }
+      }
+    },
+    {
+      "transform": [
+        {
+          "regression": "GDP per Capita",
+          "on": "Score",
+          "params": true
+        },
+        {"calculate": "'R²: '+format(datum.rSquared, '.2f')", "as": "R2"}
+      ],
+      "mark": {
+        "type": "text",
+        "color": "firebrick",
+        "x": "width",
+        "align": "right",
+        "y": -5
+      },
+      "encoding": {
+        "text": {"type": "nominal", "field": "R2"}
+      }
+    }
+  ]
+}

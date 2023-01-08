@@ -1,0 +1,27 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+    "height": 300,
+  "width": 300,
+  "background":"transparent",
+  
+    "title": {
+        "text": "Urban Population Growth by Area",
+        "subtitle":"% of population, Source: World Bank",
+        "subtitleFontStyle":"italic",
+        "subtitleFontSize":10,
+        "color": "black", 
+        "align": "center"
+      
+      },
+  
+  
+    "data": {"url": "https://raw.githubusercontent.com/miasutcliffe/miasutcliffe.github.io/main/urbanpop_byarea.csv"},
+  
+    "mark": "line",
+    "encoding": {
+      "x": {"field": "Year", "type": "temporal", "title":"Year"},
+      "y": {"field": "Urban population", "type": "quantitative","title":"Urban Population (% of population)"},
+      "color": {"field": "Country", "type": "nominal","scale": {"scheme": "greens"}}
+    }
+  }
