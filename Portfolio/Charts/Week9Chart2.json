@@ -21,7 +21,7 @@
   
     "mark": {
       "type":"circle",
-      "color":"darkgreen",
+      "color":"teal",
       "opacity":0.5},
     
     "height": 400,

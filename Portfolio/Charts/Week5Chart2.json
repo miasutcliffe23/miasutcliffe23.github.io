@@ -9,15 +9,15 @@
 
 
     "title": {
-        "text": "Export Goods Annual Growth Rate CVM SA% ",
-        "subtitle": "Source: ONS" ,
+        "text": "Export Goods ",
+        "subtitle": "Annual Growth Rate CVM SA%, ONS" ,
         "subtitleFontStyle":"italic",
         "subtitleFontSize":10,
         "anchor": "start",
         "color": "black"},
 
-    "width":300,
-    "height":300,
+    "width":200,
+    "height":200,
 
     "mark":{
         "type": "line",

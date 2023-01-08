@@ -2,7 +2,7 @@
 
   "title": {
       "text": "IMF Lending Outstanding as Percentage of Global GDP  ",
-      "subtitle":"Credit outstanding to all members as a precentage of Global GDP in US$ (%), Sources: IMF & The World Bank",
+      "subtitle":"Credit outstanding as % of Global GDP in US$, Sources: IMF & The World Bank",
       "subtitleFontStyle":"italic",
       "subtitleFontSize":10,
       "anchor": "start",
