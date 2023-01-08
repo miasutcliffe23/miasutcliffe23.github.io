@@ -1,0 +1,60 @@
+{ "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+    "title": {
+      "text": "GDP per Capita and Urban Population",
+        "subtitle":"Source: World Bank",
+      "subtitleFontStyle":"italic",
+      "subtitleFontSize":10,
+      "anchor": "start",
+      "color": "black",
+      "align": "center"
+    },
+
+  "config": {
+    "background":"white",
+    "view": {
+      "stroke": "transparent"}},
+  
+    "data": {
+      "url": "https://raw.githubusercontent.com/miasutcliffe/miasutcliffe.github.io/main/projectchart2.csv",
+      "format":{"type":"csv"}},
+  
+    "mark": {
+      "type":"circle",
+      "color":"darkgreen",
+      "opacity":0.5},
+    
+    "height": 400,
+    "width": 500,
+  
+    "encoding": {
+      "x": {
+        "field": "GDP per Capita", 
+        "type": "quantitative",
+        "scale": {"type": "log"},
+        "axis":{"grid": false},
+        "title":"GDP per Capita "},
+  
+      "y": {
+        "field": "Urban population", 
+        "type": "quantitative",
+        "scale": {"domain": [0, 100]},
+        "axis":{"grid": false},
+        "title":"Urban Population (%)"},
+  
+      "size": {
+        "field": "Population", 
+        "type": "quantitative",
+        "title":"Prison Rate",
+        "scale": { "range": [20, 2500]},
+        "legend":null},
+
+      "tooltip":[
+        {"field":"Country", "type": "nominal", "title":"Country"},
+        {"field":"GDP per Capita", "type": "quantitative", "title":"GDP per Capita", "format":".0f"},
+        {"field":"Urban population", "type": "quantitative", "title":"Urban Population (%)", "format":".2f"},
+        {"field":"Population", "type": "quantitative", "title":"Population", "format":","}
+
+      ]
+     }
+  }

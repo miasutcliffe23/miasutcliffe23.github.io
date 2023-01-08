@@ -1,0 +1,47 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+   "title": {
+    "text": "New York City School Districts",
+    "subtitle":[" Number of English Language Learners, albersUsa Projection",""],
+    "subtitleFontStyle":"italic",
+    "subtitleFontSize":10,
+    "anchor": "middle",
+    "color": "black"},
+
+  "config": {
+      "background":"white",
+      "view": {"stroke": "transparent"}},
+  
+  "width": 500,
+  "height": 300,
+
+  "data": {
+    "url": "https://raw.githubusercontent.com/miasutcliffe/miasutcliffe.github.io/main/nycschooldistricts.geojson",
+    "format": {"property": "features"}},
+
+  "transform": [{
+    "lookup": "properties.SchoolDist",
+    "from": {
+      "key": "SchoolDist",
+      "fields": ["# English Language Learners", "Total Enrollment", "% English Language Learners"],
+      "data": {"url": "https://raw.githubusercontent.com/miasutcliffe/miasutcliffe.github.io/main/newyorkschooldata.csv"}}}],
+  
+  "projection": {"type": "albersUsa"},
+  "mark": {"type": "geoshape"},
+
+   "encoding":{
+    "color":{
+      "field":"# English Language Learners",
+      "type": "quantitative",
+      "scale":{"scheme":"purpleblue"},
+      "legend":{
+        "orient": "top-left",
+        "direction": "vertical"}},
+        
+        
+  "tooltip":[
+    {"field":"properties.SchoolDist", "title": "SchoolDist"},
+        {"field":"Total Enrollment", "title": "Total Enrollment:"}, {"field":"# English Language Learners", "title":"Number of English Learners"}, {"field":"% English Language Learners", "title":"% of English Learners"}
+      ]}
+}

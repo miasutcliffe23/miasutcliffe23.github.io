@@ -1,0 +1,41 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {"url": "https://raw.githubusercontent.com/miasutcliffe/miasutcliffe.github.io/main/Week4Chart.csv"},
+  
+      "title": {
+          "text": "Commonwealth Games 22 Medal Table:",
+          "subtitleFontStyle":"italic",
+          "subtitleFontSize":10,
+          "anchor": "start",
+          "color": "black"},
+  
+      "width":300,
+      "height":300,
+    
+    
+    
+    "mark": "bar",
+    
+    "encoding": {
+      "x": {
+        "field": "Team",
+        "type": "nominal",
+        "title": "Team"
+      },
+      "y": {
+        "field":"Value",
+        "aggregate": "sum",
+        "type": "quantitative",
+        "title":null
+      },
+      "color": {
+        "field": "Type",
+        "type": "nominal",
+        "scale": {
+          "domain": ["g", "s", "b"],
+          "range": ["#e7ba52", "#c7c7c7", "#aec7e8", "#1f77b4", "#9467bd"]
+        },
+        "title": "Medal Type"
+      }
+    }
+  }

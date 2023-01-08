@@ -1,0 +1,28 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "Google's stock price over time.",
+    "data": {"url": "https://raw.githubusercontent.com/miasutcliffe/miasutcliffe.github.io/main/Week8Chart2data.csv"},
+  
+    "title": {
+          "text": "Cost per megabase of human genome DNA sequencing",
+          "subtitle": "Measured in US$, Source: Our world in data",
+          "subtitleFontStyle":"italic",
+          "subtitleFontSize":10,
+          "anchor": "start",
+          "color": "black"},
+  
+  "width":300,
+  "height":300,
+  
+    "mark":{
+          "type": "line",
+          "color":"skyblue",
+          "strokeWidth":2,
+          "opacity":1},
+    
+    "encoding": {
+      "x": {"field": "Year", "type": "temporal"},
+      "y": {"field": "cost_per_mb", "type": "quantitative", "scale": {"type": "log"}, "axis": {"domain": false, "grid": false, "ticks": false}, "title":"Cost ($)"}
+    }
+  }
+  

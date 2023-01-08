@@ -1,0 +1,35 @@
+{"$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+"title": {
+ "text": "New York City School Districts",
+ "subtitle":[" albersUsa Projection",""],
+ "subtitleFontStyle":"italic",
+ "subtitleFontSize":10,
+ "anchor": "middle",
+ "color": "black"},
+
+"config": {
+   "background":"white",
+   "view": {"stroke": "transparent"}},
+
+"width": 500,
+"height": 300,
+
+"data": {
+ "url": "https://raw.githubusercontent.com/miasutcliffe/miasutcliffe.github.io/main/nycschooldistricts.geojson",
+
+     "format": {"property": "features"}},
+
+"projection": {"type": "albersUsa"},
+
+"mark": {
+   "type": "geoshape",
+   "fill": "darkgray",
+   "stroke": "white",
+   "strokeWidth":0.5},
+
+"encoding": {
+ "tooltip": 
+   {"field": "properties.SchoolDist"}
+
+}}
