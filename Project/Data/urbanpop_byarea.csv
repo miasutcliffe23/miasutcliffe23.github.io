@@ -1,0 +1,311 @@
+Country,Year,Urban population
+Arab World,1960,31.02
+Arab World,1961,31.75
+Arab World,1962,32.49
+Arab World,1963,33.26
+Arab World,1964,34.05
+Arab World,1965,34.88
+Arab World,1966,35.67
+Arab World,1967,36.36
+Arab World,1968,37.06
+Arab World,1969,37.77
+Arab World,1970,38.48
+Arab World,1971,39.17
+Arab World,1972,39.87
+Arab World,1973,40.57
+Arab World,1974,41.20
+Arab World,1975,41.80
+Arab World,1976,42.44
+Arab World,1977,43.07
+Arab World,1978,43.54
+Arab World,1979,43.97
+Arab World,1980,44.48
+Arab World,1981,45.03
+Arab World,1982,45.57
+Arab World,1983,46.14
+Arab World,1984,46.78
+Arab World,1985,47.39
+Arab World,1986,48.01
+Arab World,1987,48.58
+Arab World,1988,49.10
+Arab World,1989,49.60
+Arab World,1990,50.07
+Arab World,1991,50.47
+Arab World,1992,51.02
+Arab World,1993,51.43
+Arab World,1994,51.70
+Arab World,1995,51.90
+Arab World,1996,52.09
+Arab World,1997,52.32
+Arab World,1998,52.56
+Arab World,1999,52.81
+Arab World,2000,53.06
+Arab World,2001,53.31
+Arab World,2002,53.57
+Arab World,2003,53.83
+Arab World,2004,54.10
+Arab World,2005,54.44
+Arab World,2006,54.83
+Arab World,2007,55.12
+Arab World,2008,55.56
+Arab World,2009,56.00
+Arab World,2010,56.38
+Arab World,2011,56.64
+Arab World,2012,56.86
+Arab World,2013,57.18
+Arab World,2014,57.51
+Arab World,2015,57.85
+Arab World,2016,58.12
+Arab World,2017,58.37
+Arab World,2018,58.63
+Arab World,2019,58.88
+Arab World,2020,59.09
+Arab World,2021,59.29
+Euro area,1960,62.09
+Euro area,1961,62.56
+Euro area,1962,63.05
+Euro area,1963,63.61
+Euro area,1964,64.16
+Euro area,1965,64.71
+Euro area,1966,65.26
+Euro area,1967,65.81
+Euro area,1968,66.30
+Euro area,1969,66.72
+Euro area,1970,67.14
+Euro area,1971,67.53
+Euro area,1972,67.86
+Euro area,1973,68.17
+Euro area,1974,68.48
+Euro area,1975,68.73
+Euro area,1976,68.95
+Euro area,1977,69.19
+Euro area,1978,69.44
+Euro area,1979,69.68
+Euro area,1980,69.92
+Euro area,1981,70.16
+Euro area,1982,70.32
+Euro area,1983,70.43
+Euro area,1984,70.49
+Euro area,1985,70.55
+Euro area,1986,70.64
+Euro area,1987,70.80
+Euro area,1988,70.96
+Euro area,1989,71.07
+Euro area,1990,71.22
+Euro area,1991,71.38
+Euro area,1992,71.53
+Euro area,1993,71.70
+Euro area,1994,71.88
+Euro area,1995,72.06
+Euro area,1996,72.23
+Euro area,1997,72.41
+Euro area,1998,72.58
+Euro area,1999,72.75
+Euro area,2000,72.94
+Euro area,2001,73.15
+Euro area,2002,73.39
+Euro area,2003,73.64
+Euro area,2004,73.89
+Euro area,2005,74.13
+Euro area,2006,74.37
+Euro area,2007,74.60
+Euro area,2008,74.82
+Euro area,2009,75.05
+Euro area,2010,75.28
+Euro area,2011,75.51
+Euro area,2012,75.72
+Euro area,2013,75.93
+Euro area,2014,76.13
+Euro area,2015,76.34
+Euro area,2016,76.55
+Euro area,2017,76.77
+Euro area,2018,76.99
+Euro area,2019,77.23
+Euro area,2020,77.46
+Euro area,2021,77.70
+Latin America & Caribbean,1960,49.42
+Latin America & Caribbean,1961,50.22
+Latin America & Caribbean,1962,51.03
+Latin America & Caribbean,1963,51.85
+Latin America & Caribbean,1964,52.67
+Latin America & Caribbean,1965,53.44
+Latin America & Caribbean,1966,54.20
+Latin America & Caribbean,1967,54.97
+Latin America & Caribbean,1968,55.73
+Latin America & Caribbean,1969,56.50
+Latin America & Caribbean,1970,57.25
+Latin America & Caribbean,1971,58.01
+Latin America & Caribbean,1972,58.77
+Latin America & Caribbean,1973,59.50
+Latin America & Caribbean,1974,60.22
+Latin America & Caribbean,1975,60.95
+Latin America & Caribbean,1976,61.67
+Latin America & Caribbean,1977,62.39
+Latin America & Caribbean,1978,63.11
+Latin America & Caribbean,1979,63.83
+Latin America & Caribbean,1980,64.54
+Latin America & Caribbean,1981,65.23
+Latin America & Caribbean,1982,65.89
+Latin America & Caribbean,1983,66.52
+Latin America & Caribbean,1984,67.15
+Latin America & Caribbean,1985,67.78
+Latin America & Caribbean,1986,68.38
+Latin America & Caribbean,1987,68.98
+Latin America & Caribbean,1988,69.56
+Latin America & Caribbean,1989,70.13
+Latin America & Caribbean,1990,70.69
+Latin America & Caribbean,1991,71.22
+Latin America & Caribbean,1992,71.71
+Latin America & Caribbean,1993,72.20
+Latin America & Caribbean,1994,72.70
+Latin America & Caribbean,1995,73.19
+Latin America & Caribbean,1996,73.65
+Latin America & Caribbean,1997,74.13
+Latin America & Caribbean,1998,74.60
+Latin America & Caribbean,1999,75.05
+Latin America & Caribbean,2000,75.50
+Latin America & Caribbean,2001,75.86
+Latin America & Caribbean,2002,76.19
+Latin America & Caribbean,2003,76.51
+Latin America & Caribbean,2004,76.82
+Latin America & Caribbean,2005,77.12
+Latin America & Caribbean,2006,77.42
+Latin America & Caribbean,2007,77.72
+Latin America & Caribbean,2008,78.01
+Latin America & Caribbean,2009,78.29
+Latin America & Caribbean,2010,78.57
+Latin America & Caribbean,2011,78.85
+Latin America & Caribbean,2012,79.12
+Latin America & Caribbean,2013,79.39
+Latin America & Caribbean,2014,79.65
+Latin America & Caribbean,2015,79.91
+Latin America & Caribbean,2016,80.17
+Latin America & Caribbean,2017,80.41
+Latin America & Caribbean,2018,80.65
+Latin America & Caribbean,2019,80.89
+Latin America & Caribbean,2020,81.13
+Latin America & Caribbean,2021,81.38
+North America,1960,69.92
+North America,1961,70.32
+North America,1962,70.74
+North America,1963,71.16
+North America,1964,71.57
+North America,1965,71.98
+North America,1966,72.38
+North America,1967,72.76
+North America,1968,73.14
+North America,1969,73.51
+North America,1970,73.80
+North America,1971,73.86
+North America,1972,73.85
+North America,1973,73.85
+North America,1974,73.85
+North America,1975,73.85
+North America,1976,73.85
+North America,1977,73.86
+North America,1978,73.87
+North America,1979,73.89
+North America,1980,73.93
+North America,1981,74.07
+North America,1982,74.23
+North America,1983,74.38
+North America,1984,74.53
+North America,1985,74.68
+North America,1986,74.83
+North America,1987,74.97
+North America,1988,75.11
+North America,1989,75.24
+North America,1990,75.43
+North America,1991,75.80
+North America,1992,76.18
+North America,1993,76.56
+North America,1994,76.93
+North America,1995,77.30
+North America,1996,77.67
+North America,1997,78.05
+North America,1998,78.42
+North America,1999,78.78
+North America,2000,79.10
+North America,2001,79.29
+North America,2002,79.46
+North America,2003,79.62
+North America,2004,79.79
+North America,2005,79.95
+North America,2006,80.11
+North America,2007,80.29
+North America,2008,80.46
+North America,2009,80.62
+North America,2010,80.79
+North America,2011,80.96
+North America,2012,81.12
+North America,2013,81.29
+North America,2014,81.46
+North America,2015,81.63
+North America,2016,81.81
+North America,2017,81.99
+North America,2018,82.17
+North America,2019,82.36
+North America,2020,82.55
+North America,2021,82.75
+South Asia,1960,16.70
+South Asia,1961,16.83
+South Asia,1962,17.02
+South Asia,1963,17.21
+South Asia,1964,17.40
+South Asia,1965,17.59
+South Asia,1966,17.79
+South Asia,1967,17.98
+South Asia,1968,18.18
+South Asia,1969,18.39
+South Asia,1970,18.60
+South Asia,1971,18.85
+South Asia,1972,19.18
+South Asia,1973,19.50
+South Asia,1974,19.85
+South Asia,1975,20.23
+South Asia,1976,20.62
+South Asia,1977,21.02
+South Asia,1978,21.43
+South Asia,1979,21.86
+South Asia,1980,22.30
+South Asia,1981,22.70
+South Asia,1982,22.96
+South Asia,1983,23.22
+South Asia,1984,23.48
+South Asia,1985,23.74
+South Asia,1986,24.00
+South Asia,1987,24.27
+South Asia,1988,24.54
+South Asia,1989,24.81
+South Asia,1990,25.08
+South Asia,1991,25.34
+South Asia,1992,25.56
+South Asia,1993,25.78
+South Asia,1994,26.01
+South Asia,1995,26.24
+South Asia,1996,26.48
+South Asia,1997,26.71
+South Asia,1998,26.95
+South Asia,1999,27.19
+South Asia,2000,27.42
+South Asia,2001,27.70
+South Asia,2002,28.04
+South Asia,2003,28.38
+South Asia,2004,28.72
+South Asia,2005,29.07
+South Asia,2006,29.42
+South Asia,2007,29.78
+South Asia,2008,30.14
+South Asia,2009,30.50
+South Asia,2010,30.86
+South Asia,2011,31.22
+South Asia,2012,31.60
+South Asia,2013,31.97
+South Asia,2014,32.36
+South Asia,2015,32.76
+South Asia,2016,33.16
+South Asia,2017,33.58
+South Asia,2018,34.01
+South Asia,2019,34.44
+South Asia,2020,34.89
+South Asia,2021,35.35
