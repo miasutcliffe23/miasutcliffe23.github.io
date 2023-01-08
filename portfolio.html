@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@4.17.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.12.2"></script>
+
+    <!--Main Stylesheet-->
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+
+<body>
+
+<div class="container">    
+
+    <h1>Portfolio:</h1> 
+    <a href="indexClassExample.html" id="link1">HOME</a>
+<div>
+ 
+    <!--WEEK 1:-->
+
+    <p><span class="leader"> Week 1: Embedding Charts </span> </p>
+    
+    <p>
+      Graphs are taken from the rapidchards repository on github
+    </p>
+    
+    <section class="bcontainer">
+            <div class="chart" id="chart1"></div>
+            <div class="chart" id="chart2"></div>
+    </section>
+
+     <!--WEEK 2:-->
+    
+    <p><span class="leader"> Week 2: Hosting Data </span> </p>
+    
+    <p>
+      Data for these charts was taken from the IMF and downloaded in a csv file and edited. 
+    </p>
+    
+    <section class="bcontainer">
+        <div class="card" id="chart">
+            <div class="chart" id="chart3"></div>
+            <div class="chart" id="chart4"></div>
+        </div>
+    </section>
+
+    <p>
+        In the second chart which has been adjusted ......... 
+    </p>
+
+    <!--WEEK 3:-->
+
+    <p><span class="leader"> WeeK 3: Inline data objects </span> </p>
+    
+    <p>
+      These charts show xxxx i added a tooltip on the second chart to help make the data clearer. 
+    </p>
+    
+    <section class="bcontainer">
+        <div class="card" id="chart">
+            <div class="chart" id="chart5"></div>
+            <div class="chart" id="chart6"></div>
+        </div>
+    </section>
+   
+   <!--WEEK 4:-->
+
+   <p><span class="leader"> WeeK 4: Data Scraping </span> </p>
+    
+   <p>
+     To create this week's chart I used python to scrape and clean data from a website url
+   </p>
+   
+   <section class="bcontainer">
+     <div class="chart" id="chart7"></div>
+   </section>
+   
+   <!--WEEK 5:-->
+
+   <p><span class="leader"> Week 5: API Data </span> </p>
+    
+   <p>
+     To create this week's chart I used python to scrape and clean data from a website url
+   </p>
+   
+   <section class="bcontainer">
+           <div class="chart" id="chart8"></div>
+           <div class="chart" id="chart9"></div>
+           <div class="chart" id="chart10"></div>
+           <div class="chart" id="chart11"></div>
+           <div class="chart" id="chart12"></div>
+           <div class="chart" id="chart13"></div>
+           <div class="chart" id="chart14"></div>
+           <div class="chart" id="chart15"></div>
+           <div class="chart" id="chart16"></div>
+   </section>
+
+    <!--WEEK 7:-->
+
+    <p><span class="leader"> Week 7: Maps </span> </p>
+    
+    <p>
+      This week i created two maps of new york neighbourhoods. The first just included a tooltip showing the number code of the neighbourhood. For the second i created a choropleth showing the percentage of students who are english language learners. 
+    </p>
+    
+    <section class="bcontainer">
+        <div class="card" id="chart">
+            <div class="chart" id="chart17"></div>
+            <div class="chart" id="chart18"></div>
+        </div>
+    </section>
+   
+    <!--WEEK 8:-->
+
+   <p><span class="leader"> WeeK 8: Festival of Economics </span> </p>
+    
+   <p>
+     To create this week's chart I used python to scrape and clean data from a website url
+   </p>
+   
+   <section class="bcontainer">
+       <div class="card" id="chart">
+           <div class="chart" id="chart19"></div>
+           <div class="chart" id="chart20"></div>
+       </div>
+   </section>
+
+   <!--WEEK 9:-->
+
+   <p><span class="leader"> WeeK 9: Advanced Charts </span> </p>
+    
+   <p>
+     To create this week's chart I used python to scrape and clean data from a website url
+   </p>
+   
+   <section class="bcontainer">
+       <div class="card" id="chart">
+           <div class="chart" id="chart21"></div>
+       </div>
+   </section>
+
+   <p>
+    To create this week's chart I used python to scrape and clean data from a website url
+  </p>
+
+  <section class="bcontainer">
+    <div class="card" id="chart">
+        <div class="chart" id="chart22"></div>
+    </div>
+</section>
+   
+
+
+    <script>
+
+      // Set the charts that we want on the page as variables linked to JSON files:
+      var myChart1 = "Portfolio/Charts/Week1Chart1.json";
+      var myChart2 = "Portfolio/Charts/Week1Chart2.json";
+      var myChart3 = "Portfolio/Charts/Week2Chart1.json";
+      var myChart4 = "Portfolio/Charts/Week2Chart2.json";
+      var myChart5 = "Portfolio/Charts/Week3Chart1.json";
+      var myChart6 = "Portfolio/Charts/Week3Chart2.json";
+      var myChart7 = "Project/Charts/solar_gen_world.json";
+      var myChart8 = "Portfolio/Charts/Week5Chart1.json";
+      var myChart9 = "Portfolio/Charts/Week5Chart2.json";
+      var myChart10 = "Portfolio/Charts/Week5Chart3.json";
+      var myChart11 = "Portfolio/Charts/Week5Chart4.json";
+      var myChart12 = "Portfolio/Charts/Week5Chart5.json";
+      var myChart13 = "Portfolio/Charts/Week5Chart6.json";
+      var myChart14 = "Portfolio/Charts/Week5Chart7.json";
+      var myChart15 = "Portfolio/Charts/Week5Chart8.json";
+      var myChart16 = "Portfolio/Charts/Week5Chart9.json";
+      var myChart17 = "Portfolio/Charts/Week7Chart1.json";
+      var myChart18 = "Portfolio/Charts/Week7Chart2.json";
+      var myChart19 = "happinessgdp.json";
+      var myChart20 = "happinessandscore.json";
+      var myChart21 = "Project/Charts/ProjectChart4.json";
+      var myChart22 = "Portfolio/Charts/Week9Chart2.json";
+      
+      
+      
+      // Embed the charts in the divs above
+      vegaEmbed('#chart1', myChart1, {"actions": true});
+      vegaEmbed('#chart2', myChart2, {"actions": true});
+      vegaEmbed('#chart3', myChart3, {"actions": true});
+      vegaEmbed('#chart4', myChart4, {"actions": true});
+      vegaEmbed('#chart5', myChart5, {"actions": true});
+      vegaEmbed('#chart6', myChart6, {"actions": true});
+      vegaEmbed('#chart7', myChart7, {"actions": true});
+      vegaEmbed('#chart8', myChart8, {"actions": true});
+      vegaEmbed('#chart9', myChart9, {"actions": false});
+      vegaEmbed('#chart10', myChart10, {"actions": true});
+      vegaEmbed('#chart11', myChart11, {"actions": true});
+      vegaEmbed('#chart12', myChart12, {"actions": true});
+      vegaEmbed('#chart13', myChart13, {"actions": true});
+      vegaEmbed('#chart14', myChart14, {"actions": true});
+      vegaEmbed('#chart15', myChart15, {"actions": true});
+      vegaEmbed('#chart16', myChart16, {"actions": true});
+      vegaEmbed('#chart17', myChart17, {"actions": true});
+      vegaEmbed('#chart18', myChart18, {"actions": false});
+      vegaEmbed('#chart19', myChart19, {"actions": true});
+      vegaEmbed('#chart20', myChart20, {"actions": true});
+      vegaEmbed('#chart21', myChart21, {"actions": true});
+      vegaEmbed('#chart22', myChart22, {"actions": true});
+    </script>
+
+
+</html>

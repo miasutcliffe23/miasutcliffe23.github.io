@@ -1,0 +1,129 @@
+
+/* FONTS: 
+ Import fonts used from google fonts website */
+
+ @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Assistant&display=swap');   
+ 
+ /* Format the title and subtitle of the website  */
+ 
+ h1{
+     color:rgb(13, 65, 70);
+     font-family: 'Bebas Neue', sans-serif;
+     text-align: center; 
+     font-size: 100px;
+ }
+ 
+ p{
+     font-family: 'Assistant', sans-serif;
+     font-variant: small-caps;
+     color:rgb(13, 65, 70);
+     background-color: rgb(189, 208, 210);
+     text-align: center;
+     font-size: 30px;
+ }
+ 
+ /* AREAS OF THE PAGE */
+ 
+ body{
+     background-color: rgb(138, 172, 175);
+ }
+ 
+ /* BUTTONS */
+ 
+ a{
+     border: 5px;
+     border-color: black;
+     border-style: solid;
+ 
+     margin:116px
+ }
+ 
+ 
+ #link1{
+     background-color: rgb(201, 220, 222);
+     padding:20px;
+     border:2px;
+     border-color:rgb(13, 65, 70);
+     border-style: solid;
+     border-radius: 10px;
+     font-family: 'Assistant', Courier, monospace;
+     font-weight:700;
+     color: slategray;
+     text-decoration: none;
+ }
+ 
+ #link1:hover{
+ 
+     background-color: rgba(13, 65, 70);
+     border:2px;
+     border-color: rgb(201, 220, 222);
+     border-style: solid;
+     
+ }
+ 
+ #link2{
+     background-color: rgb(201, 220, 222);
+     padding:20px;
+     border:2px;
+     border-color:rgb(13, 65, 70);
+     border-style: solid;
+     border-radius: 10px;
+     font-family: 'Assistant', Courier, monospace;
+     font-weight:700;
+     color: slategray;
+     text-decoration: none;
+ }
+ 
+ #link2:hover{
+ 
+     background-color: rgba(13, 65, 70);
+     border:2px;
+     border-color: rgb(201, 220, 222);
+     border-style: solid;
+     
+ }
+ 
+ #link3{
+     background-color: rgb(201, 220, 222);
+     padding:20px;
+     border:2px;
+     border-color:rgb(13, 65, 70);
+     border-style: solid;
+     border-radius: 10px;
+     font-family: 'Assistant', Courier, monospace;
+     font-weight:700;
+     color: slategray;
+     text-decoration: none;
+ }
+ 
+ #link3:hover{
+ 
+     background-color: rgba(13, 65, 70);
+     border:2px;
+     border-color: rgb(201, 220, 222);
+     border-style: solid;
+     
+ }
+ 
+ #link4{
+     background-color: rgb(201, 220, 222);
+     padding:20px;
+     border:2px;
+     border-color:rgb(13, 65, 70);
+     border-style: solid;
+     border-radius: 10px;
+     font-family: 'Assistant', Courier, monospace;
+     font-weight:700;
+     color: slategray;
+     text-decoration: none;
+ }
+ 
+ #link4:hover{
+ 
+     background-color: rgba(13, 65, 70);
+     border:2px;
+     border-color: rgb(201, 220, 222);
+     border-style: solid;
+     
+ }

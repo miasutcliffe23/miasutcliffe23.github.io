@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@4.17.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.12.2"></script>
+
+    <!--Main Stylesheet-->
+    <link rel="stylesheet" href="project.css">
+</head>
+
+<body>
+
+    <h1>Portfolio:</h1> 
+    <a href="indexClassExample.html" id="link1">HOME</a>
+
+  <div>
+        <h2>My Question: </h2>
+        <h3> Talk about urbanisation, link to UN sustainable goals etc. Talk about how i made my first chart </h3>
+  </div>
+
+  <!--Chart 1 -->
+
+    <div class="chart" id="Chart20" ></div>
+
+    <!--Chart 2-->
+
+    <div>
+        <h5> Talk about urbanisation and GDP and how they are linked. Talk about how you go your data using APIs from the world bank and creating tertiles. </h5>
+    </div>
+
+
+    <!--Insert Kepler Map -->
+
+
+    <!--Chart 3 & 4-->
+
+    <div>  
+        <h7> Talk about the importance of green space on health and economy. Urbanisation reduces green space. </h7>
+        <h8> </h8>
+    </div>
+    
+        <div class="chart" id="Chart21" ></div>
+        <div class="chart" id="Chart22" ></div>
+
+    <!--Chart 5-->
+
+    <div>
+        <h9> Green Space in London:</h9>
+    </div>
+
+      <div class="chart" id="Chart23" ></div>
+
+
+    <!--Chart 6-->
+
+    <div>
+        <h11> Link Between Poverty Rates and Green Space Access</h11>
+        <h12> </h12>
+    </div>
+
+
+        <div class="chart" id="Chart24" ></div>
+
+
+
+
+</body>
+
+<script>
+    //Define charts:
+    var myChart20 = "projectchart1";
+    var myChart21 = "happinessandgdp.json";
+    var myChart22 = "happinessandscore.json";
+    var myChart23 = "ProjectChart5.json";
+    var myChart24 = "ProjectChart6.json";
+
+    
+
+    // Embed charts:
+    vegaEmbed('#Chart20', myChart20);
+    vegaEmbed('#Chart21', myChart21);
+    vegaEmbed('#Chart22', myChart22);
+    vegaEmbed('#Chart23', myChart23);
+    vegaEmbed('#Chart24', myChart24);
+  
+</script>
+
+
+</html>
